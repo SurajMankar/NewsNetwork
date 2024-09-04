@@ -4,7 +4,7 @@ function getNews(searchfor) {
 
   const apikey = '9c0ef6c1c8e695bca6f195f8dc386a53';
   let category = 'general';
- let  url = 'https://gnews.io/api/v4/top-headlines?category=' + category + '&lang=en&country=us&max=10&apikey=' + apikey;
+ let  url = 'https://gnews.io/api/v4/top-headlines?category=' + category + '&lang=en&country=in&max=10&apikey=' + apikey;
 
 
   // const language = "en";
