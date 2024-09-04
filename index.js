@@ -3,22 +3,12 @@ let news_container = document.querySelector(".news");
 function getNews(searchfor) {
 
   const apikey = '9c0ef6c1c8e695bca6f195f8dc386a53';
-  let category = 'general';
+  let category = 'today';
  let  url = 'https://gnews.io/api/v4/top-headlines?category=' + category + '&lang=en&country=in&max=10&apikey=' + apikey;
 
-
-  // const language = "en";
-  // let url = `https://newsapi.org/v2/top-headlines?country=in&language=${language}&apiKey=405f7bc337954124b9401ec8cef8b14d`;
-
-  // if (searchfor != "") {
-  //   url = `https://newsapi.org/v2/everything?q=${searchfor}&language=${language}&apiKey=405f7bc337954124b9401ec8cef8b14d`;
-  // }
-
   if (searchfor != "") {
-    url = `https://gnews.io/api/v4/search?q=${searchfor}&lang=en&country=us&max=10&apikey=` + apikey;
+    url = `https://gnews.io/api/v4/search?q=${searchfor}&lang=en&country=in&max=10&apikey=` + apikey;
   }
-
-
 
   fetch(url)
     .then((res) => {
